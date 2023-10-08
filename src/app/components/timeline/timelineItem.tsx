@@ -7,9 +7,26 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Typeography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
+import React, { useEffect, useState } from 'react';
 
 export default function EmploymentTimelineItem(job: any) {
-  // convert /n in summary to <br />
+  const [showSummary, setShowSummary] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   let fixedSummary = '';
   if (!job.job.summary) {
     fixedSummary = '';
@@ -46,10 +63,28 @@ export default function EmploymentTimelineItem(job: any) {
               {job.job.endDate ? job.job.endDate : 'Present'}
             </Typeography>
           </h4>
-          {fixedSummary === '' ? null : (
-            <Box sx={{ mt: '1rem' }}>
-              <p>{fixedSummary}</p>
-            </Box>
+          {fixedSummary !== '' && (
+            <>
+              <Box
+                sx={{
+                  mt: '1rem',
+                  '@media (max-width: 768px)': {
+                    display: showSummary ? 'block' : 'none', // Only hide the summary on small screens when showSummary is false
+                  },
+                }}
+              >
+                <p>{fixedSummary}</p>
+              </Box>
+              {isSmallScreen && !showSummary && (
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setShowSummary(!showSummary)}
+                >
+                  {showSummary ? 'Hide Summary' : 'Show Summary'}
+                </Button>
+              )}
+            </>
           )}
         </Card>
       </TimelineContent>
