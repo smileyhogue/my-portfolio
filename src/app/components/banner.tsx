@@ -27,7 +27,7 @@ export default async function Banner(resume: any) {
             <Typography color="primary" component="span" variant="inherit">
               Hello,
             </Typography>
-            {'\u00A0'}I'm Tristen Hogue
+            {'\u00A0'}I&apos;m Tristen Hogue
           </Typography>
 
           <Typography gutterBottom component="h1" variant="h2">
