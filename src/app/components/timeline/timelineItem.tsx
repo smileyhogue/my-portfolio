@@ -10,12 +10,12 @@ import Typeography from '@mui/material/Typography';
 
 export default function EmploymentTimelineItem(job: any) {
   // convert /n in summary to <br />
-  let summary = '';
+  let fixedSummary = '';
   if (!job.job.summary) {
-    summary = '';
+    fixedSummary = '';
   } else {
-    summary = job.job.summary;
-    summary = summary.split(`\n`).map((subStr: string) => {
+    let summary = job.job.summary;
+    fixedSummary = summary.split(`\n`).map((subStr: string) => {
       return (
         <>
           {subStr}
@@ -46,9 +46,9 @@ export default function EmploymentTimelineItem(job: any) {
               {job.job.endDate ? job.job.endDate : 'Present'}
             </Typeography>
           </h4>
-          {summary === '' ? null : (
+          {fixedSummary === '' ? null : (
             <Box sx={{ mt: '1rem' }}>
-              <p>{summary}</p>
+              <p>{fixedSummary}</p>
             </Box>
           )}
         </Card>
