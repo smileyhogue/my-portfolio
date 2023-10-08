@@ -17,6 +17,7 @@ export default function EmploymentTimelineItem(job: any) {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
     };
