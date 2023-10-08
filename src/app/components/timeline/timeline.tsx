@@ -8,7 +8,7 @@ export default function EmploymentTimeline(resume: any) {
   return (
     <Timeline position="alternate">
       {/* iterate through resumeData.work and create a timeline item for each */}
-      {resumeData.work.map((job: any) => (
+      {resumeData.work.slice(0, 6).map((job: any) => (
         <EmploymentTimelineItem key={job.name} job={job} />
       ))}
     </Timeline>
