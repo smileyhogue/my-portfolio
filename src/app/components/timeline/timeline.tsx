@@ -9,7 +9,7 @@ export default function EmploymentTimeline(resume: any) {
     <Timeline position="alternate">
       {/* iterate through resumeData.work and create a timeline item for each */}
       {resumeData.work.slice(0, 6).map((job: any) => (
-        <EmploymentTimelineItem key={job.name} job={job} />
+        <EmploymentTimelineItem key={job.startDate} job={job} />
       ))}
     </Timeline>
   );
