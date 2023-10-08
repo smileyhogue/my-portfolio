@@ -35,7 +35,7 @@ export default async function Banner(resume: any) {
           </Typography>
 
           <Typography color="textSecondary" component="p" variant="subtitle1">
-            Passionate about coding, aviation, and... This is a WIP
+            in East TN where it is {currentTempF}° and {currentForcast}
           </Typography>
         </Box>
 
