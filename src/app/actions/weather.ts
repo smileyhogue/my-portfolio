@@ -22,7 +22,6 @@ export default async function getWeather() {
   const currentForcast = forcastData.properties.periods[0].shortForecast;
   // return the current temp and forcast as JSON
   //console.log({ currentTemp, currentForcast })
-  console.log({ currentTempF, currentForcast });
   revalidateTag('forcast');
   revalidateTag('observation');
   return { currentTempF, currentForcast };
