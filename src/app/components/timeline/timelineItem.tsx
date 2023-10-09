@@ -9,26 +9,38 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Typeography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import styled from '@mui/material/styles/styled';
 
 import React, { useEffect, useState } from 'react';
 
+const CustomButton = styled(Button)(({ theme }) => ({
+  '&:hover': {
+    backgroundColor: theme.palette.primary.main, // Change background color on hover
+    color: theme.palette.primary.contrastText, // Change text color on hover (optional)
+  },
+}));
+
 export default function EmploymentTimelineItem(job: any) {
   const [showSummary, setShowSummary] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(true);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
+    if (typeof window === 'undefined') {
+      setIsSmallScreen((window as any).innerWidth <= 768);
+    } else {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 768);
+      };
 
-    window.addEventListener('resize', handleResize);
+      handleResize(); // Call once immediately to set initial state
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
-
   let fixedSummary = '';
   if (!job.job.summary) {
     fixedSummary = '';
