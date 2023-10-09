@@ -14,9 +14,11 @@ import styled from '@mui/material/styles/styled';
 import React, { useEffect, useState } from 'react';
 
 const CustomButton = styled(Button)(({ theme }) => ({
+  backgroundColor: theme.palette.primary.main, // Default color
+  color: theme.palette.primary.contrastText,
   '&:hover': {
-    backgroundColor: theme.palette.primary.main, // Change background color on hover
-    color: theme.palette.primary.contrastText, // Change text color on hover (optional)
+    backgroundColor: theme.palette.secondary.main, // Change background color on hover
+    color: theme.palette.secondary.contrastText, // Change text color on hover
   },
 }));
 
@@ -67,7 +69,9 @@ export default function EmploymentTimelineItem(job: any) {
       <TimelineContent>
         <Card sx={{ p: '1rem' }}>
           <h2>{job.job.name}</h2>
-          <h3>{job.job.position}</h3>
+          <Typeography color="secondary.light" component="h3" variant="inherit">
+            {job.job.position}
+          </Typeography>
           <h4>
             <Typeography gutterBottom>
               <Typeography color="primary" component="span" variant="inherit">
@@ -90,13 +94,12 @@ export default function EmploymentTimelineItem(job: any) {
                 <p>{fixedSummary}</p>
               </Box>
               {isSmallScreen && !showSummary && (
-                <Button
+                <CustomButton
                   variant="contained"
-                  color="primary"
                   onClick={() => setShowSummary(!showSummary)}
                 >
                   {showSummary ? 'Hide Summary' : 'Show Summary'}
-                </Button>
+                </CustomButton>
               )}
             </>
           )}
