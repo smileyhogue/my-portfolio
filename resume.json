@@ -4,7 +4,7 @@
     "name": "Tristen Hogue",
     "label": "Support Engineer at PandoLogic",
     "image": "",
-    "summary": "Highly-motivated Support Engineer with years of experience providing Tier 3 Support and Solutions Engineering for complex enterprise systems, including Unifi Networking equipment, Kubernetes, TrueNAS, and Docker. Adept at utilizing scripting languages, automation tools, and monitoring tools to ensure maximum uptime and optimal customer experience. Proven track record of successfully resolving customer issues, troubleshooting complex technical problems, and developing innovative solutions. Skilled in network engineering, scripting, automation, and customer service. Experienced in deploying and managing Windows and Linux servers, SAN/NAS storage, and virtualization technologies. Successfully manage multiple concurrent projects, prioritize tasks, and ensure the highest quality of service. Track record of success in driving customer satisfaction, improving operational efficiency, and deploying new products and services.",
+    "summary": "Highly-motivated Support Engineer with years of experience providing Tier 3 Support and Solutions Engineering for complex enterprise systems, including Unifi Networking equipment, Kubernetes, TrueNAS, and Docker. Adept at utilizing scripting languages, automation tools, and monitoring tools to ensure maximum uptime and optimal customer experience. Proven track record of successfully resolving customer issues, troubleshooting complex technical problems, and developing innovative solutions. Skilled in network engineering, scripting, automation, and customer service. Experienced in deploying and managing Windows and Linux servers, NAS storage, and virtualization technologies. Successfully manage multiple concurrent projects, prioritize tasks, and ensure the highest quality of service. Track record of success in driving customer satisfaction, improving operational efficiency, and deploying new products and services.",
     "location": {
       "countryCode": "US",
       "address": "Tennessee, USA"
@@ -33,16 +33,16 @@
       "startDate": "2023-02-28",
       "endDate": "",
       "highlights": [],
-      "summary": "/n- Collaborate with cross-functional teams, including developers and product managers, to address customer needs and improve overall system.\n\n/n- Identify, diagnose, and resolve system bugs and outages in timely & accurate manner, minimizing downtime & maximizing customer satisfaction.\n\n/n- Lead communication efforts during ongoing incidents, ensuring internal customers are kept informed and equipped to address client questions.\n\n/n- Acquire & document comprehensive technical knowledge of company products and services to provide accurate and efficient support to clients.\n\n/n- Deliver high-quality service to clients by promptly and effectively responding to inquiries and resolving technical issues via email, Slack, and the ticketing system.\n\n/n- Maintain a high level of awareness of upcoming releases and current trends in the tech space, implementing preventive measures to mitigate potential issues.",
+      "summary": "- Collaborate with cross-functional teams, including developers and product managers, to address customer needs and improve overall system.\n\n- Identify, diagnose, and resolve system bugs and outages in timely & accurate manner, minimizing downtime & maximizing customer satisfaction.\n\n- Lead communication efforts during ongoing incidents, ensuring internal customers are kept informed and equipped to address client questions.\n\n- Acquire & document comprehensive technical knowledge of company products and services to provide accurate and efficient support to clients.\n\n- Deliver high-quality service to clients by promptly and effectively responding to inquiries and resolving technical issues via email, Slack, and the ticketing system.\n\n- Maintain a high level of awareness of upcoming releases and current trends in the tech space, implementing preventive measures to mitigate potential issues.",
       "url": "https://www.linkedin.com/company/pandologic/"
     },
     {
       "name": "PandoLogic",
       "position": "Senior TechOps Specialist",
       "startDate": "2022-01-31",
-      "endDate": "",
+      "endDate": "2023-02-28",
       "highlights": [],
-      "summary": "/n- Develop and implement IT policies, procedures, and best practices to enhance operational efficiency, security, and compliance.\n/n- Provide advanced technical support and troubleshooting for complex system issues, serving as the highest level of escalation for critical incidents.\n/n- Collaborate with cross-functional teams to develop and implement strategic plans, aligning technology initiatives with business goals & objectives.",
+      "summary": "- Develop and implement IT policies, procedures, and best practices to enhance operational efficiency, security, and compliance.\n- Provide advanced technical support and troubleshooting for complex system issues, serving as the highest level of escalation for critical incidents.\n- Collaborate with cross-functional teams to develop and implement strategic plans, aligning technology initiatives with business goals & objectives.",
       "url": "https://www.linkedin.com/company/pandologic/"
     },
     {
@@ -51,7 +51,7 @@
       "startDate": "2021-01-31",
       "endDate": "2022-01-31",
       "highlights": [],
-      "summary": "/n- Optimize operational processes and procedures for maximum efficiency while maintaining campaign quality standards.\n/n- Assisting with the implementation of new processes and procedures.\n/n- Identify potential technical problems on a clients campaign and resolve them quickly\n/n- Maintain policy and procedure documents.",
+      "summary": "- Optimize operational processes and procedures for maximum efficiency while maintaining campaign quality standards.\n- Assisting with the implementation of new processes and procedures.\n- Identify potential technical problems on a clients campaign and resolve them quickly\n- Maintain policy and procedure documents.",
       "url": "https://www.linkedin.com/company/pandologic/"
     },
     {
@@ -60,7 +60,7 @@
       "startDate": "2020-01-31",
       "endDate": "2021-01-31",
       "highlights": [],
-      "summary": "/n- Work closely with internal customers to ensure all new clients' needs are addressed prior to sale\n/n- Provide detailed specifications for proposed solutions including time and scope involved\n/n- Analyze current technologies used within the company and develop steps and processes to improve\n/n- Account for possible project challenges or constraints and proactively seek to manage challenges",
+      "summary": "- Work closely with internal customers to ensure all new clients' needs are addressed prior to sale\n- Provide detailed specifications for proposed solutions including time and scope involved\n- Analyze current technologies used within the company and develop steps and processes to improve\n- Account for possible project challenges or constraints and proactively seek to manage challenges",
       "url": "https://www.linkedin.com/company/ziprecruiter/",
       "location": "Tempe, Arizona"
     },
@@ -70,7 +70,7 @@
       "startDate": "2019-07-31",
       "endDate": "2020-01-31",
       "highlights": [],
-      "summary": "/n- Manage enterprise performance marketing recruitment campaigns\n/n- Provide strategic support to sales representatives\n/n- Identify key areas of campaign improvement\n/n- Conduct quarterly business reviews\n/n- Ensure campaign success by tracking KPI's and analyzing campaign data",
+      "summary": "- Manage enterprise performance marketing recruitment campaigns\n- Provide strategic support to sales representatives\n- Identify key areas of campaign improvement\n- Conduct quarterly business reviews\n- Ensure campaign success by tracking KPI's and analyzing campaign data",
       "url": "https://www.linkedin.com/company/ziprecruiter/",
       "location": "Tempe, Arizona"
     },
@@ -399,13 +399,13 @@
     {
       "name": "Home Lab",
       "startDate": "2018-04-30",
-      "summary": "Hardware:\n  /n- Networking\n    /n- Unifi Dream Machine SE\n    /n- Unifi Aggregation Switch\n    /n- Unifi Switch 24\n  /n- Systems\n    /n- Dell PowerEdge R720XD\n    /n- Hyve Zeus (x3)\n    /n- Hyve Cygnus\n    /n- Dell PowerEdge R760XA\n\n/n- Software\n  /n- NGINX (Reverse Proxy)\n  /n- Ansible\n  /n- Docker\n  /n- CrowdSec\n  /n- Kubernetes (k3s)\n\n/n- Services\n  /n- Gitlab with runners\n  /n- Home Assistant\n  /n- ELK Stack\n  /n- Authelia\n  /n- Portfolio (Working on moving this to AWS Lambda and is currently down)\n  /n- Miscellaneous security focused services and automations\n  /n- Several self-built projects for automation and security",
+      "summary": "Hardware:\n  - Networking\n    - Unifi Dream Machine SE\n    - Unifi Aggregation Switch\n    - Unifi Switch 24\n  - Systems\n    - Dell PowerEdge R720XD\n    - Hyve Zeus (x3)\n    - Hyve Cygnus\n    - Dell PowerEdge R760XA\n\n- Software\n  - NGINX (Reverse Proxy)\n  - Ansible\n  - Docker\n  - CrowdSec\n  - Kubernetes (k3s)\n\n- Services\n  - Gitlab with runners\n  - Home Assistant\n  - ELK Stack\n  - Authelia\n  - Portfolio (Working on moving this to AWS Lambda and is currently down)\n  - Miscellaneous security focused services and automations\n  - Several self-built projects for automation and security",
       "url": null,
       "endDate": "2018-04-30"
     }
   ],
   "meta": {
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
   }
 }
