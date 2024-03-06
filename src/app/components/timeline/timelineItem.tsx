@@ -68,7 +68,7 @@ export default function EmploymentTimelineItem(job: any) {
       </TimelineSeparator>
       <TimelineContent>
         <Card sx={{ p: '1rem' }}>
-          <h2>{job.job.name}</h2>
+          <h2 className={job.job.name === "PandoLogic (a Veritone company)" ? "Worst company I ever worked for." : ""}>{job.job.name}</h2>
           <Typeography color="secondary.light" component="h3" variant="inherit">
             {job.job.position}
           </Typeography>
