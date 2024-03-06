@@ -12,7 +12,7 @@
     "about": [
       { "value": "I am a self-taught full-stack developer" },
       {
-        "value": "In my free time I enjoy working on my home lab, playing video games, and aviation"
+        "value": "In my free time I enjoy working on my homelab, playing video games, and aviation"
       },
       {
         "value": "I like to learn new skills and am always looking for new challenges"
@@ -28,16 +28,16 @@
   },
   "work": [
     {
-      "name": "PandoLogic",
+      "name": "Veritone",
       "position": "Tier 3 Support Engineer",
       "startDate": "2023-02-28",
-      "endDate": "",
+      "endDate": "2024-02-21",
       "highlights": [],
       "summary": "- Collaborate with cross-functional teams, including developers and product managers, to address customer needs and improve overall system.\n\n- Identify, diagnose, and resolve system bugs and outages in timely & accurate manner, minimizing downtime & maximizing customer satisfaction.\n\n- Lead communication efforts during ongoing incidents, ensuring internal customers are kept informed and equipped to address client questions.\n\n- Acquire & document comprehensive technical knowledge of company products and services to provide accurate and efficient support to clients.\n\n- Deliver high-quality service to clients by promptly and effectively responding to inquiries and resolving technical issues via email, Slack, and the ticketing system.\n\n- Maintain a high level of awareness of upcoming releases and current trends in the tech space, implementing preventive measures to mitigate potential issues.",
       "url": "https://www.linkedin.com/company/pandologic/"
     },
     {
-      "name": "PandoLogic",
+      "name": "Pandologic (a Veritone Company)",
       "position": "Senior TechOps Specialist",
       "startDate": "2022-01-31",
       "endDate": "2023-02-28",
@@ -46,7 +46,7 @@
       "url": "https://www.linkedin.com/company/pandologic/"
     },
     {
-      "name": "PandoLogic",
+      "name": "Pandologic (a Veritone Company)",
       "position": "Technical Operations Specialist",
       "startDate": "2021-01-31",
       "endDate": "2022-01-31",
