@@ -98,7 +98,23 @@ export default function EmploymentTimelineItem(job: any) {
                   variant="contained"
                   onClick={() => setShowSummary(!showSummary)}
                 >
-                  {showSummary ? 'Hide Summary' : 'Show Summary'}
+                  {showSummary ? (
+                    <Typeography
+                      color="primary"
+                      component="span"
+                      variant="inherit"
+                    >
+                      Hide Summary
+                    </Typeography>
+                  ) : (
+                    <Typeography
+                      color="primary"
+                      component="span"
+                      variant="inherit"
+                    >
+                      Show Summary
+                    </Typeography>
+                  )}
                 </CustomButton>
               )}
             </>
